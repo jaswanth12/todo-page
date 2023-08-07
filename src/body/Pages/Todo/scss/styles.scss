@@ -1,0 +1,92 @@
+@import '../../../../scss/variables.scss';
+@import './todocolors.scss';
+.todoPage {
+  margin-top: 50px;
+  max-width: 540px;
+  margin-left: auto;
+  border: 1px solid darkcyan;
+  margin-right: auto;
+  padding: 30px 15px;
+  min-height: 350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  .heading{
+    text-align: center;
+    color: #445069;
+  }
+  .todoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid darkcyan;
+    padding: 30px;
+    border-radius: 6px;
+
+    input {
+      border-radius: 6px;
+      // height: 26px;
+      margin-right: 10px;
+      align-self: stretch;
+      border: 1px solid #445069;
+
+    }
+    .react-dropdown {
+      // border: 1px solid #445069;
+      @each $name, $color in $todoColors{
+        &.#{$name} .Dropdown-control {
+          .is-selected {
+            background-image: linear-gradient(
+              to right,
+              $color 0px,
+              $color 15px,
+              $white 15px,
+              $white 100%
+            );
+            padding-left: 20px;
+          }
+        }
+      }
+
+    }
+
+    button {
+      border: 1px solid skyblue;
+      background-color: skyblue;
+      border-radius: 6px;
+      padding: 8px 25px;
+      margin-left: 20px;
+      align-self: stretch;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .todoItems {
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 15px;
+      border-radius: 6px;
+      font-weight: 500;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+      &.white {
+        background-color: $white;
+        border: 1px solid #C4C1A4;
+      }
+      @each $name, $color in $todoColors{
+        &.#{$name}{
+          background-color: $color;
+        }
+      }
+
+
+      .cross {
+        font-size: 13px;
+        color: #ff6666;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

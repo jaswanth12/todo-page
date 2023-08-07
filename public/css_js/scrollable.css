@@ -1,0 +1,24 @@
+.scrollable-container-wrapper .scrollable-parent-container{
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+}
+.scrollable-container-wrapper .scrollable-parent-container{
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+}
+.scrollable-container-wrapper .scrollable-parent-container .single-container{
+	width: 250px;
+	margin-left: 15px;
+	margin-right: 15px;
+
+	/*height: 250px;*/
+
+} 
+.scrollable-container-wrapper .scrollable-parent-container .single-container img{
+	width: 250px;
+	height: auto;
+	object-fit: cover;
+border-radius: 20px;
+}

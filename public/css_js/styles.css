@@ -1,0 +1,121 @@
+
+
+.title{
+	font-size: 25px;
+	font-weight: 800;
+	color: #222;
+
+}
+.description{
+	font-size: 20px;
+	color: #222;
+	margin-bottom: 25px;
+
+}
+.modal-title{
+	font-size: 25px;
+	font-weight: 800;
+	color: #222;
+}
+.modal-body h2{
+	font-size: 18px;
+	color: #222;
+	text-align: justify;
+	line-height: 30px;
+
+}
+.section-wrapper{
+	text-decoration: none;
+	color: #222;
+}
+.section-wrapper:hover{
+	text-decoration: none;
+	color: #222;
+	
+}
+.section{
+	border-radius: 20px;
+	/*border: 2px solid black;*/
+	
+	box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 10%), 0px 10px 15px -3px rgb(0 0 0 / 10%);
+	margin: 50px;
+	margin-top: 0px;
+}
+
+@media screen and (max-width: 800px){
+		.section{
+			margin-top: 0px;
+			margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+		}
+}
+.section .image-container{
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+
+}
+.section .image-container img{
+	width: 100%;
+	border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
+
+}
+.section .image-container .shadow-overlap{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: rgba(255,255,255,0);
+	display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: background 2s,color 2s;
+    border-top-left-radius: 17px;
+	border-top-right-radius: 17px;
+	cursor: pointer;
+}
+
+.section .image-container .shadow-overlap:hover{
+	display: flex;
+	color: white;
+	align-items: center;
+    justify-content: space-evenly;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.section p, .section h2{
+	text-align: center;
+	cursor: pointer;
+}
+.section h2{
+	font-weight: bold;
+	margin: 0px;
+	padding:15px 10px 10px;
+}
+
+.SubmitButton, .CancelButton{
+	padding: 8px 20px;
+	color: white !important;
+	text-decoration: none !important;
+	border-radius: 8px;
+	background-color: #228B22;
+	border:none;
+	margin: 5px;
+}
+.SubmitButton:hover{
+	background-color: white;
+	border:1px solid #228B22;
+	color: #228B22 !important;
+}
+.CancelButton{
+	background-color: #FF4500;/*RED COLOR*/
+	background-color: #DAA510;
+	cursor: pointer;
+}
+.CancelButton:hover{
+	border:1px solid #DAA510;
+	background-color: white;
+	color: #DAA510 !important;
+}
