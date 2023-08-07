@@ -44,7 +44,7 @@ const Todo = () => {
       <div className="todoPage">
         <h1 className="heading">TODO PAGE</h1>
         <form onSubmit={submitHandler} className="todoForm">
-          <input type="text" ref={todoRef} required />
+          <input type="text" ref={todoRef} placeholder="enter todo item" required />
           <Dropdown
             ref={colorRef}
             className={`react-dropdown ${color}`}
